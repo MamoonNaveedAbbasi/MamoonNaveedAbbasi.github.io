@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mamoon Naveed Abbasi | Portfolio</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00f0ff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff0033;
+      margin-bottom: 30px;
+    }
+
+    #typewriter {
+      font-size: 20px;
+      border-right: 2px solid #00f0ff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 5s steps(90, end) forwards, blink 1s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .contact-btn {
+      margin-top: 50px;
+      padding: 12px 24px;
+      background-color: #ff0033;
+      color: white;
+      text-decoration: none;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 0 15px #ff0033;
+      cursor: pointer;
+    }
+
+    .contact-btn:hover {
+      background-color: #ff3366;
+      box-shadow: 0 0 25px #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Neon Portfolio</h1>
+
+  <div id="typewriter">
+    Hi, I’m Mamoon Naveed Abbasi — a Software Engineering student at COMSATS University Islamabad and a passionate digital content creator from Bakote, Abbottabad.
+  </div>
+
+  <a
