@@ -65,12 +65,13 @@
   <a href="contact.html" class="contact-btn">Contact Me</a>
 
   <!-- 🎵 Background Music -->
-  <audio autoplay loop>
+  <audio id="bg-audio" autoplay loop muted>
     <source src="bgmusic.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <script>
+    // ✅ Typing Bio
     const text = `Hi, I’m Mamoon Naveed Abbasi — a Software Engineering student at COMSATS University Islamabad and a passionate digital content creator.
 
 I’m from Bakote, Abbottabad. I enjoy building digital projects, exploring web technologies, and creating content that connects people.`;
@@ -88,6 +89,15 @@ I’m from Bakote, Abbottabad. I enjoy building digital projects, exploring web 
     }
 
     typeWriter();
+
+    // ✅ Fix autoplay block for music
+    window.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bg-audio");
+      setTimeout(() => {
+        audio.muted = false;
+        audio.play().catch(() => {});
+      }, 1000);
+    });
   </script>
 </body>
 </html>
